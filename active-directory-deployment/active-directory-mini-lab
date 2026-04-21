@@ -1,0 +1,33 @@
+# Active Directory Deployment
+
+## Project Overview
+What is an Active Directory?
+  Active Directory (AD) is the backbone of almost every corporate IT environment in the world.
+  It manages all the System Operations, Network, Databases of an Organization Managing Seurity and Company policies.
+
+## Tools Need
+  Hypervisor: VMware Workstation
+  Virtual Machines: Windows Server and Windows 10 ISO
+
+## FOLLOW THE SEQUENCE
+  Phase 1: Build the Virtual Machines
+          - Download VMware Workstation Pro from Broadcom Website
+          - Download Windows Server ISO and Windows 10
+
+  Phase 2: Configure the Machines
+          - Configure the Windows Server and Windows 10 in the Hypervisor Individually
+          - Assign a Static IP Address to the Windows Server because server needs to stay in one place clients need to access them
+
+  Phase 3: Building the Domain
+          - On the Windows Server you need to install a role Active Directory (AD). After Installation prompt the sever to Doamin Controller
+
+  Phase 4: Joining the Domain
+          - Login to the Windows 10 client machine. Point its DNS to the Windows Server IP Address and officially join the machine
+
+  Phase 5: Active Directory Policy Management
+          - Back on the Windows server open AD users and computers accounts 
+          - Login in using new AD Credentials
+          - Add Groups and Policies, Set Rights and Permissions for every single computer on the Active Directory
+
+Hence you can manage computer and users in any organization/company centrally by limiting access for the specific work type
+
