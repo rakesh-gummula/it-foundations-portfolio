@@ -1,0 +1,55 @@
+# Home Virtual Lab Setup
+
+## Project Overview
+Home Virtual Lab is a place where you can learn and practice different Opeararing Systems like Windows, MacOS and Linux.
+User can learn and manage different process of an os like File Management, Networking, Process and Command Line Interface in an Isolated Sandbox Environment.
+
+  ## Tools Needed
+     - VMware Workstation (Host)
+     - Kali Linux (Guest)
+
+## FOLLOW THE SEQUENCE
+Phase 1: Build the Virtual Machines
+        - Download VMware Workstation Pro
+           - Go to Broadcom Official Website and Signup
+           - Navigate to Downloads and Scroll to download workstation pro
+        - Download Kali Linux ISO
+          - Go to Kali's Official Website
+          - Choose Platform as Installer Images
+          - Then download Installer Images ISO
+
+Phase 2: Configuring Hypervisor
+         - Create a new Virtual Machine
+         - Custom (Advanced)
+         - Choose Workstation H25 or later
+         - Browser the ISO Image (Kali Linux) from Downloads
+         - Choose Guest Operating System Type - Kali Linux version Debian 13x Debianx64
+         - Give a Name to your Virtual Machine - Kali
+         - Allocate the processors and cores per proccessor - Allocate atleast 4 processor cores for smoooth experience
+         - Allocate Memory for your VM (Guest Machine) - Allocaat at lest 4GB RAM
+         - Use Network Address Translation (NAT) default
+         - I/O Controller Type - LSI Logic (Recommended)
+         - Select a Disk Type - Choose Recommended by default
+         - Create a new virtual disk
+         - Split the disk and allocate atleast 35GB Space
+         - Review Everything once before creating. If want to modify you can do
+
+Phase 3: Starting up Virtual Machine
+         - Choose Graphical Install
+         - Chooose a System Languge, Location and Keyboard Language
+         - Configure the network and enter hostname - kali or your preferred
+         - If you have a domain name you enter or else just leave it by moving next step
+         - Enter the user name and confirm password
+         - Choose the Disk for partion - Recommended to use Entire Disk and keep all files in one partition then prompt for finish partioning the disk
+         - Then the system will Install Automatically
+         - Choose gdm3 as default display manager
+         - Install GRUB Load on the disk choose the disk and prompt for yes
+         - You need to choose Kali Linux Interface like Xfce, GNOME, KDE Plasma - Recommended Xfce by default
+          Note: You can change your interface later by installing the required interface in terminal
+         - Finsh the Installation - Reboot the system
+         - Login with user name and password - The New Virtual Operating System is yours
+         Note: Update the system in terminal
+                1. Sudo apt update
+                2. Sudo apt upgrade -y
+                3. Sudo apt autoremove -y
+            Enjoy your new Operating System
