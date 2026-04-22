@@ -1,0 +1,31 @@
+# Home Nerwork Topology
+
+## Project Objective
+To discover, identify and visually document all active devices on your local home network. 
+You will detemine the networks IP range, find live hosts and identify what are those devices.
+
+## What you will need
+  - Your Home Network
+  - Command Line Interace: Command Prompt for Windows and Terminal for MacOS and Linux
+  - A Network Scanner: nmap or zenmap(preferred)
+
+## Follow the Sequence
+Phase 1: Detemine your scope
+         - Open your Terminal
+         - Use Command: ipconfig for Windows or ifconfig for Linux
+         - You will see a bunch of newtorks in the CLI Interface
+         - Identify your computer's local IP address, the Subnet Mask, and the Default Gateway (your router)
+         - This shows that the range of IP Address of your network
+           e.g:  inet 10.116.73.163  netmask 255.255.255.0  broadcast 10.116.73.255
+
+Phase 2: Active Scanning
+         - Run your choosen network scanner against your network range
+         - ping every ip address and get response back
+         - use command: traceroute this will icmp protocol determine the router
+
+Phase 3: Device Identification
+         - Use Wireshark and Zenmap to map the devices and identify the type of devices usinf its IP Address and MAC Address
+
+Phase 4: Diagam
+        - Draw a diagram of your home network or use cisco packer tracer
+Hence the Home Network Mapping Audit has done.
