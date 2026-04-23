@@ -1,0 +1,86 @@
+# Automated Backup Scripts
+
+## Project Objective
+To write a script that automatically copies critical files from a source folder to a destination foler(like an external hard drive) 
+ on a regular schedule, while keeping a log of activities.
+
+## What you will need 
+ Your Computer: Any Operating System Windows, MacOS and Linux
+ Code Editor: Visual Studio Code or Notepad or Nano Editor
+ A Scripting Language: For Windows - Powershell
+                       For MacOS/Linux - Bash
+ A Task Scheduler: Windows Task Scheduler or cron for linux
+
+## FOLLOW THE SEQUENCE
+Phase 1: Set up your Test Folders
+         - Create a folder on your desktop called Source_Data and put a few files and images into it.
+         - Now create an another folder called Backup_Destination on different drive (USB Drive) or else where on your computer
+
+Phase 2: Write the Backup Script
+         - Write a small script telling the computer exactly what to move.
+          A basic powershell script
+          
+# Basic Backup Script using Robocopy
+$source = "C:\Users\YourName\Desktop\Source_Data"
+$destination = "E:\Backup_Destination"
+$logFile = "C:\Users\YourName\Desktop\Backup_Log.txt"
+
+# /MIR mirrors the directory (deletes files in destination if deleted in source)
+# /LOG tells it where to save the text record of the backup
+robocopy $source $destination /MIR /LOG:$logFile
+
+ Save this file as DailyBackup.ps1 for Poweshell
+
+ Phase 3: Automation
+          - Open the Task Scheduler App in Windows
+          - Click create Basic Task and name it "Daily Data Backup"
+          - Set the trigger to daily and set the time ( eg.02:00am)
+          - Start a program, type powershell.exe, and in the "Add arguments" box type the path to your script C:\Path\To\DailyBackup.ps1").
+
+Phase 4: Verification and Logging
+         - Manually run the task to test it.
+         - Check your Backup Destination folder to ensure files are copied successfully.
+         - Then, open your Backup_Log.txt file.
+
+Hence, this is how the daily backup system for automation works
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
