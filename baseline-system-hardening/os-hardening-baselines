@@ -1,0 +1,35 @@
+# Baseline System Hardening
+
+## Project Objective
+To take a default, out-of-the-box operating system (Windows or Linux) and configure it according to industry security standards.
+You will disable unnecessary services, configure the local firewall, and enforce strict user policies to protect the machine from unauthorized access.
+
+## What you will need
+Hypervisor: VMware Workstation Pro
+Operating System: Windows 10 or Kali Linux
+A Security Framework: The CIS Benchmarks
+
+## FOLLOW THE SEQUENCE
+Phase 1: Deployment & Baselining
+         -Install a fresh copy of your chosen OS on a virtual machine.
+         -Before changing anything, document the "baseline."
+         -Open your command line and check what network ports are listening by default (using netstat -ano in Windows)
+         -Look at the default password requirements.
+
+Phase 2: Identity & Access Hardening
+         This is where you lock down who can access the system.
+         -Open the Local Security Policy tool (secpol.msc in Windows).
+         -Enforce a password policy: Require at least 14 characters, complexity (numbers/symbols),
+           and set an account lockout policy (e.g., the account locks for 30 minutes after 5 failed login attempts.
+         -Disable default accounts like the built-in "Guest" or "Administrator" accounts.
+
+Phase 3: Service & Network Hardening
+         Lock down how the system communicates.
+         -Configure the local firewall to block all incoming traffic by default, only allowing exactly what is neccessary.
+         -Open the Services menu (services.msc) and disable legacy or risky services.
+          A classic example in Windows is disabling SMBv1, which is a massive security risk,
+          or disabling the Print Spooler if the machine isn't connected to a printer.
+
+Phase 4: Automation
+        Instead of clicking through menus to make these 50+ changes manually, write a PowerShell
+        script (for Windows) or a Bash script (for Linux) that changes the registry keys and firewall rules for you. This shows massive value to employers.
