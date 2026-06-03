@@ -1,0 +1,17 @@
+Import-Module ActiveDirectory
+
+$DomainDN = (Get-ADDomain).DistinguishedName
+
+# Create an OU for Admin Accounts
+New-ADOrganizationalUnit -Name "IT-Admins" -Path $DomainDN
+
+# Create a Standard User Account
+New-ADUser -Name "YourName Standard" -SamAccountName "yn.standard" -UserPrincipalName "yn.standard@cyberlab.local" -Path "OU=IT-Admins,$DomainDN" -AccountPassword (ConvertTo-SecureString "Pass123!" -AsPlainText -Force) -Enabled $true
+
+# Create a Domain Admin Account (Tier 0)
+New-ADUser -Name "YourName Admin" -SamAccountName "yn.admin" -UserPrincipalName "yn.admin@cyberlab.local" -Path "OU=IT-Admins,$DomainDN" -AccountPassword (ConvertTo-SecureString "SuperSecurePass123!" -AsPlainText -Force) -Enabled $true
+
+# Add the Admin account to the Domain Admins group
+Add-ADGroupMember -Identity "Domain Admins" -Members "yn.admin"
+
+Write-Host "Tiered accounts created successfully!" -ForegroundColor Green
