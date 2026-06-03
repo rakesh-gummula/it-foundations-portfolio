@@ -30,7 +30,7 @@ Before starting, make sure you have:
   - Advanced IP Scanner
 - Basic understanding of IP addressing and local networking
 
-## 🚀 Installation
+## 🚀 Getting Started
 Phase 1: Map the Network with Zenmap:
 
 ![Home Screen](assets/Screenshot-1.png)
@@ -66,7 +66,7 @@ After setup, you can use this project to:
 - Visualize how devices are connected within your home network
 
 ## ✅ Best Practices
-- Explore Wireshark for Advanced Network Monitoring and Anlaysis
+- Explore Wireshark for Advanced Network Monitoring and Analysis
 - Scan only networks you own or are authorized to manage
 - Keep records of device names, IPs, and roles
 - Update your network map regularly
