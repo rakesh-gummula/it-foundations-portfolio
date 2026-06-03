@@ -1,4 +1,4 @@
-# 📊Baseline System Hardening
+# 📊 Baseline System Hardening
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![Security](https://img.shields.io/badge/Focus-System%20Hardening-blue)
@@ -13,7 +13,26 @@ This project documents a practical, repeatable Baseline System Hardening process
 It is designed as a portfolio-friendly GitHub project that demonstrates foundational cybersecurity, IT support, and systems administration skills.
 The workflow is written for learners with a IT background and focuses on safe, realistic hardening steps that improve security without overcomplicating the system.
 
-## Prerequisits
+## 📋 Table of Contents
+
+- [Prerequisites](#-prerequisites)
+- [Objectives](#-objectives)
+- [Technologies and Tools Used](#-technologies-and-tools-used)
+- [Step-by-Step Guide](#-step-by-step-guide)
+  - [Step 1: Prepare the System and Define the Baseline](#step-1-prepare-the-system-and-define-the-baseline)
+  - [Step 2: Fully Patch the Operating System](#step-2-fully-patch-the-operating-system)
+  - [Step 3: Remove Unnecessary Software and Disable Unused Features](#step-3-remove-unnecessary-software-and-disable-unused-features)
+  - [Step 4: Apply Account Hardening](#step-4-apply-account-hardening)
+  - [Step 5: Strengthen Password and Authentication Controls](#step-5-strengthen-password-and-authentication-controls)
+  - [Step 6: Secure Local Security Settings](#step-6-secure-local-security-settings)
+  - [Step 7: Harden Network Exposure](#step-7-harden-network-exposure)
+  - [Step 8: Improve Browser and User Protection](#step-8-improve-browser-and-user-protection)
+  - [Step 9: Set Up Backup and Recovery Protection](#step-9-set-up-backup-and-recovery-protection)
+  - [Step 10: Validate the Hardening Changes](#step-10-validate-the-hardening-changes)
+- [Best Practices](#-best-practices)
+- [Conclusion](#-conclusion)
+
+## Prerequisites
 
 Before starting, you should have:
  - A Windows or Linux machine in a lab or test environment
@@ -220,7 +239,6 @@ This project may use the following tools depending on the platform:
 **Deliverable:** A validation checklist with pass/fail results.
 
 ## Best Practices
-
 - Use a lab environment whenever possible.
 - Make one change at a time and verify the result.
 - Keep clear notes on every setting you change.
@@ -228,6 +246,5 @@ This project may use the following tools depending on the platform:
 - Balance security with usability.
 
 ## Conclusion
-
 Baseline hardening is one of the most valuable skills in IT and cybersecurity.
 It combines practical system administration, risk reduction, and clear documentation.
