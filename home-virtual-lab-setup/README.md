@@ -24,7 +24,7 @@ Before setting up your home lab, make sure you have:
 - A computer with enough CPU, RAM, and storage for virtualization
 - Virtualization enabled in BIOS/UEFI
 - A hypervisor such as:
-  - VMware Workstation Pro (Prefarred)
+  - VMware Workstation Pro (Preferred)
   - Oracle VirtualBox
   - Hyper-V
 - Operating system(Kali) ISO files for the systems you want to install
@@ -55,6 +55,7 @@ Before setting up your home lab, make sure you have:
 ![Configure the Network: Hostname](screenshots/Screenshot-23.png)
 ![Configure the Network: Domain name](screenshots/Screenshot-24.png)
 ![Setup users and passwords](screenshots/Screenshot-25.png)
+![Usename for your account](screenshots/Screenshot-26.png)
 ![Usename for your account](screenshots/Screenshot-27.png)
 ![Password for your account](screenshots/Screenshot-28.png)
 ![In Progress](screenshots/Screenshot-29.png)
