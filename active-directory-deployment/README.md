@@ -15,16 +15,20 @@ The goal of this project is to set up a secure, isolated virtual network consist
 
 ## Core Components
 
-**- Hypervisor:** VirtualBox or VMware Workstation Player (Both are free).
-**- Domain Controller (DC):** Windows Server 2022 (Evaluation ISO).
-**- Client Machine:** Windows 10 or 11 Pro (Evaluation ISO).
-**- Network:** Isolated internal virtual network with the DC providing Routing/NAT, DNS, and DHCP services.
+**Hypervisor:** VirtualBox or VMware Workstation Player (Both are free).
+
+**Domain Controller (DC):** Windows Server 2022 (Evaluation ISO).
+
+**Client Machine:** Windows 10 or 11 Pro (Evaluation ISO).
+
+**Network:** Isolated internal virtual network with the DC providing Routing/NAT, DNS, and DHCP services.
 
 ### Step 1: Gather Your Resources
 
 Before starting, download the official, free trial ISOs from Microsoft:
 
 **1. Windows Server 2022 Evaluation ISO:** Download from the Microsoft Evaluation Center.
+
 **2. Windows 10/11 Enterprise/Pro Evaluation ISO:** Download from the Microsoft Evaluation Center.
 
 ### Step 2: Configure the Virtual Network & VMs
