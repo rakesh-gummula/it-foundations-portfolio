@@ -79,11 +79,11 @@ You must assign a static IP to the internal network interface so clients always 
 2. Promote the Server
 - Once installed, click the yellow flag notification icon in Server Manager and select Promote this server to a domain controller.
 - Choose Add a new forest.
-- Enter a Root Domain Name (e.g., cyberlab.local or corp.internal).
+- Enter a Root Domain Name (e.g., cyberlab.local).
 - Set a Directory Services Restore Mode (DSRM) password (write this down).
 - Keep defaults for the rest of the wizard and click Install. The server will reboot automatically.
 
-### Step 5: Automate User Creation (The "GitHub Portfolio" Flex)
+### Step 5: Automate User Creation
 
 Instead of creating users one by one manually, you will use a PowerShell script to create an Organizational Unit (OU) structure and bulk-import hundreds of mock users.
 
@@ -92,7 +92,7 @@ Create a CSV file named names.csv with columns for FirstName and LastName. Popul
 
 2. Run the PowerShell Script
 Log in to your Domain Controller as the Administrator, open PowerShell ISE as Administrator, and run a script similar to this:
-![Powershell Script for Creating Users Bulkly](scripts/BulkUserCreation.ps1)
+![BulkUserCreation.ps1](scripts/BulkUserCreation.ps1)
 
 ### Step 6: Deploy DHCP
 
@@ -135,7 +135,7 @@ To show that you understand centralized management, implement a simple GPO polic
 - Try opening the control panel to verify that the policy blocks access.
 
 ## Best Practices
-Configure Windows Defender Firewalls, Event Viewer auditing, and setup Least Privilege access accounts
+Configure Windows Defender Firewalls, Event Viewer auditing, and Setup Least Privilege access accounts
 
 ## License
 MIT LICENSE
