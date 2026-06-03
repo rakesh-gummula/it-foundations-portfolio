@@ -1,4 +1,4 @@
-# 🛠️ IT System Administration & Automation
+# 🛠️ Backup Automation
 
 <div align="center">
 
@@ -26,7 +26,7 @@ You need to decide which environment you want to write your script in.
 We are going to write a script that takes a specific folder, compresses it into a ZIP file with a date timestamp, moves it to a backup location, and writes a log file detailing whether it succeeded or failed.
 
 1.Open Windows PowerShell ISE or VS Code on your computer.
-2. Create a new file, copy the code below, and save it as ![Backup Script for Windows](scripts/BackupScript.ps1).
+2. Create a new file, copy the code below, and save it as ![BackupScript.ps1](scripts/BackupScript.ps1).
 
 (Note: Change the $sourceDir and $backupDir variables to folder paths that actually exist on your PC to test it).
 
@@ -48,7 +48,7 @@ You will use Windows Task Scheduler to run this script automatically in the back
 
 ## Linux
 
-### Automated Network Security Monitor
+### Bash Automation Script
 
 This Bash script will ping a target machine (like your home router or a virtual machine) to check if it is online, scan it for open essential ports (like SSH, HTTP, and HTTPS), and log the results with a timestamp.
 It demonstrates knowledge of Linux command-line tools, networking protocols, and security monitoring.
@@ -60,7 +60,7 @@ You can write this on any Linux distribution (Ubuntu, Kali, Mint) or via Windows
 1. Open your terminal.
 2. Create a new file using a text editor like nano:
    nano network_monitor.sh
-3. Copy and paste the following code: ![Network Automation Script](scripts/nano%20network_monitor.sh).
+3. Copy and paste the following code: ![network_monitor.sh](scripts/network_monitor.sh).
 4. Save the file (Ctrl+O, Enter, then Ctrl+X in nano).
 5. Make the script executable by running:
    chmod +x network_monitor.sh
@@ -68,7 +68,7 @@ You can write this on any Linux distribution (Ubuntu, Kali, Mint) or via Windows
 
 ### Step 2: Automate with Cron Jobs
 
-In Linux, the equivalent of Windows Task Scheduler is the cron daemon.
+In Linux, the equivalent of Windows Task Scheduler is the cron daemon(tar+rsync).
 Let's set this script to run automatically every hour.
 
 1. Open your crontab configuration by typing:
@@ -79,5 +79,7 @@ Let's set this script to run automatically every hour.
    The script will now execute on the hour, every hour, silently building a log of your network's health.
 
 ## Recommended
+Automate at least five daily routines to save time and back up your data.
 
-- Automate at least five daily routines to save time and back up your data.
+## 📄 License
+This project is licensed under the MIT License.
